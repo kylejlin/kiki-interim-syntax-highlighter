@@ -31,7 +31,7 @@
       "patterns": [
         {
           "name": "keyword.control.kiki",
-          "match": "\\b(start|struct|enum|terminal)\\b"
+          "match": "\\b(start|struct|enum|terminal|crate|super)\\b"
         }
       ]
     },
@@ -56,6 +56,10 @@
         {
           "name": "entity.name.type.kiki",
           "match": "(?<=\\n|^|[^_a-zA-Z0-9])([A-Z][_a-zA-Z0-9]*)(?=\\n|$|[^_a-zA-Z0-9])"
+        },
+        {
+          "name": "entity.name.type.kiki",
+          "match": "(?<=::)([_a-z][_a-zA-Z0-9]*)(?=::)"
         },
         {
           "name": "entity.name.variable.kiki",
