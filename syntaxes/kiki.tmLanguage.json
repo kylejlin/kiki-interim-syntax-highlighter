@@ -3,6 +3,9 @@
   "name": "Kiki",
   "patterns": [
     {
+      "include": "#attributes"
+    },
+    {
       "include": "#keywords"
     },
     {
@@ -16,6 +19,14 @@
     }
   ],
   "repository": {
+    "attributes": {
+      "patterns": [
+        {
+          "name": "entity.name.function.kiki",
+          "match": "(?<=\\#\\[)([_a-zA-Z][_a-zA-Z0-9]*)(?=\\()"
+        }
+      ]
+    },
     "keywords": {
       "patterns": [
         {
@@ -36,7 +47,7 @@
       "patterns": [
         {
           "name": "constant.language.terminal.kiki",
-          "match": "\\$[_a-zA-Z][_a-zA-Z0-9]+"
+          "match": "\\$[_a-zA-Z][_a-zA-Z0-9]*"
         }
       ]
     },
