@@ -1,0 +1,34 @@
+{
+  "name": "aya-syntax",
+  "displayName": "Aya Syntax",
+  "description": "Syntax highlighting for the Aya programming language.",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "aya",
+        "aliases": [
+          "Aya",
+          "aya"
+        ],
+        "extensions": [
+          ".aya"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aya",
+        "scopeName": "source.aya",
+        "path": "./syntaxes/aya.tmLanguage.json"
+      }
+    ]
+  }
+}
