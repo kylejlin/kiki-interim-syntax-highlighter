@@ -31,7 +31,7 @@
       "patterns": [
         {
           "name": "keyword.control.kiki",
-          "match": "\\b(start|struct|enum|terminal|crate|super)\\b"
+          "match": "\\b(start|struct|enum|terminal|crate|super|mod)\\b"
         }
       ]
     },
