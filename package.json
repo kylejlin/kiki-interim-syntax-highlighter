@@ -2,8 +2,9 @@
   "name": "kiki-interim-syntax-highlighter",
   "displayName": "Kiki Interim Syntax Highlighter",
   "description": "Syntax highlighting for the Kiki grammars.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "kylejlin",
+  "repository": "https://github.com/kylejlin/kiki-interim-syntax-highlighter",
   "engines": {
     "vscode": "^1.100.0"
   },
