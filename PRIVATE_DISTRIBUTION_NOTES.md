@@ -16,7 +16,7 @@ Then, package your extension.
 vsce package
 ```
 
-This should create a `.vsix` file in this directory (i.e., the `aya-syntax` directory).
+This should create a `.vsix` file in this directory (i.e., the `kiki-interim-syntax-highlighter` directory).
 
 ## 2. Install the `.vsix` file
 

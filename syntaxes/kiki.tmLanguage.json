@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Kiki",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#names"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.kiki",
+          "match": "\\b(start|struct|enum|terminal)\\b"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.kiki",
+          "match": "\\/\\/[^\\n]*"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.terminal.kiki",
+          "match": "\\$[_a-zA-Z][_a-zA-Z0-9]+"
+        }
+      ]
+    },
+    "names": {
+      "patterns": [
+        {
+          "name": "entity.name.type.kiki",
+          "match": "(?<=\\n|^|[^_a-zA-Z0-9])([A-Z][_a-zA-Z0-9]*)(?=\\n|$|[^_a-zA-Z0-9])"
+        },
+        {
+          "name": "entity.name.variable.kiki",
+          "match": "(?<=\\n|^|[^_a-zA-Z0-9])([_a-z][_a-zA-Z0-9]*)(?=\\n|$|[^_a-zA-Z0-9])"
+        },
+        {
+          "name": "variable.other.kiki",
+          "match": "\\b_\\b"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.kiki"
+}
