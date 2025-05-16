@@ -2,8 +2,8 @@
   "name": "kiki-interim-syntax-highlighter",
   "displayName": "Kiki Interim Syntax Highlighter",
   "description": "Syntax highlighting for the Kiki grammars.",
-  "version": "1.0.0",
-  "publisher": "Kyle Lin",
+  "version": "1.0.1",
+  "publisher": "kylejlin",
   "engines": {
     "vscode": "^1.100.0"
   },
